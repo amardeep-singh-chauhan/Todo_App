@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-form {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.input-and-btn {
+  display: flex;
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.todo-box {
+  width: 100%;
+  max-width: 400px;
+  margin: -3px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.todo-box .content {
+  display: flex;
+}
+
+.todo-box .content p {
+  margin-top: -6px;
+  margin-left: 7px;
+  padding-top: 19px;
+}
+
+.todo-box span {
+  margin: 0 5px;
+}
+
+.delete-all {
+  width: 100%;
+  max-width: 400px;
+}
+
+.actions-box {
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.back-btn {
+  margin-top: 5px;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .custom-form,
+  .todo-box,
+  .delete-all {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-form,
+  .todo-box,
+  .delete-all {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-and-btn {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+}
